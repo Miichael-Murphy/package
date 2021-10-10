@@ -1,3 +1,15 @@
+#' Title
+#'
+#' @description Produces a table to simulate the comings and goings of customers being served at a bank.
+#' @param Arrivals The time which customers arrive at the bank, provided by a given dataset
+#' @param ServiceTimes The amount of time each customer takes to be served by a teller, provided by a given dataset
+#' @param NumServers The number of servers available, entered as an integer value
+#'
+#' @example Multiserver(Arrivals = bank$arrival_time, ServiceTimes = bank$service_time, NumServers = 2)
+#'
+#' @return
+#' @export
+#'
 Multiserver <- function(Arrivals, ServiceTimes, NumServers = 1) {
   if (any(Arrivals <= 0 | ServiceTimes <= 0) || NumServers <= 0){
     stop("Arrivals, ServiceTimes must be positive & NumServers must be positive" )
