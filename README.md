@@ -1,7 +1,3 @@
----
-output: github_document
----
-
 The following ReadMe file is for Question 2 of Assignment 2.
 
 # Question 2 - Multiserver and the banks dataset
